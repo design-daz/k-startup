@@ -1,0 +1,772 @@
+@charset "UTF-8";
+
+/* @import url('../css/style_t.css'); */
+@import url('../css/style_t-common.css');
+
+
+
+/* 
+K edu - Mobile 
+(min-width : 360px) ~ (max-width : 769px) 
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/*
+GENERAL STYLING
+================================================ */
+
+body {
+
+    min-width: 360px;
+
+}
+
+/*
+COMMON
+================================================ */
+
+.inner {
+
+    max-width: 320px;
+    /* padding: 0 20px; */
+
+}
+
+.col-12 {
+
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px 20px;
+}
+
+
+.inner.s-mob {
+    max-width: 328px;
+}
+
+.col-12.s-mob {
+    gap: 16px;
+
+}
+
+.section {
+    margin-top: 24px;
+}
+
+
+
+/* 
+index
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/*
+Header
+================================================ */
+
+
+.guruguru .main-logo {
+    grid-column: span 3;
+}
+
+
+.guruguru .utility ul>li.login,
+.guruguru .utility ul>li.sign-up {
+    display: none;
+
+}
+
+
+
+
+/*
+Nav
+================================================ */
+
+
+
+
+
+.guruguru nav.inner {
+    max-width: 360px;
+    
+}
+
+.guruguru nav .nav-utility.mob {
+    display: flex;
+}
+
+
+/*
+Edu Search
+================================================ */
+
+.guruguru .search-box {
+    display: none;
+}
+
+
+.guruguru .search-box.s-mob {
+    display: block;
+
+    height: 60px;
+}
+
+.guruguru .search-box.s-mob .edu-search {
+    height: 60px;
+
+}
+
+
+/*
+Main
+================================================ */
+
+.guruguru .main-bg {
+    padding: 16px 0 20px;
+}
+
+
+
+/* ===== notice Box =====  */
+
+.guruguru .notice-box {
+    height: 120px;
+}
+
+.guruguru .notice-box.flx {
+
+    flex-direction: column;
+}
+
+.guruguru .notice {
+    width: 100%;
+
+    justify-content: center;
+
+    padding: 18px 16px;
+
+
+}
+
+.guruguru .notice-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.guruguru .notice>h5 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+
+/* ===== notice Slide =====  */
+
+.guruguru .notice-sld {
+    width: 100%;
+    padding: 16px 8px;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    height: 58px;
+}
+
+
+.guruguru ul.dot>li>a {
+    /* height: 100%; */
+}
+
+
+
+/* ===== Visual-Sld =====  */
+
+.guruguru .info-box h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+
+    padding: 8px 0 16px;
+
+}
+
+
+.guruguru .info-txt {
+    padding: 20px 8px;
+}
+
+.guruguru .info-box p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    word-break: break-all;
+}
+
+
+
+
+
+/*
+Curriculum
+================================================ */
+
+h2 {
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+
+}
+
+.guruguru .cur-box {
+    margin-top: 32px;
+}
+
+.guruguru .cur-cnt {
+    grid-column: span 3;
+}
+
+
+
+/*
+Lecture
+================================================ */
+
+
+
+.guruguru .new-lec-hd {
+    margin-top: 48px;
+}
+
+
+.guruguru .new-lec p.text-b-24 {
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+
+}
+
+.guruguru .fraction.text-m-16 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+.guruguru .pop-lec-hd {
+    margin-top: 36px;
+}
+
+.guruguru .pop-lec p.text-b-24 {
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+
+}
+
+
+/* ===== Lecture-Sld =====  */
+
+.guruguru .lt-sd-n.web,
+.guruguru .lt-sd-n.tab {
+    display: none;
+}
+
+.guruguru .lt-sd-n.mob {
+    display: block;
+}
+
+
+.guruguru .lt-sd-p.web,
+.guruguru .lt-sd-p.tab {
+    display: none;
+}
+
+.guruguru .lt-sd-p.mob {
+    display: block;
+}
+
+
+.guruguru .lec-cnt {
+    grid-column: span 6;
+
+    position: relative;
+}
+
+.guruguru .lec-cnt>div.flx {
+    row-gap: 16px;
+}
+
+
+
+.guruguru .lec-txt-l {
+    position: absolute;
+
+    top: 8px;
+    left: 8px;
+}
+
+.guruguru .lec-tit {
+    margin-bottom: 8px;
+}
+
+
+
+
+/*
+Count
+================================================ */
+
+.guruguru .count {
+    display: none;
+}
+
+
+
+
+/*
+Footer
+================================================ */
+
+footer {
+    margin-top: 48px;
+}
+
+footer.s-mob {
+    margin-top: 0;
+}
+
+.guruguru .banner-bar {
+    height: 39px;
+    padding: 8px 20px;
+
+    border-top: 1px solid #E5E7EB;
+}
+
+.guruguru .banner-bar>.inner.flx {
+    gap: 16px;
+    gap: 28px;
+    gap: 24px;
+}
+
+.guruguru .footer-box {
+    margin-top: 5px;
+}
+
+.guruguru .footer-logo {
+    grid-column: span 4;
+}
+
+.guruguru .footer-info {
+    order: 0;
+
+    grid-column: span 6;
+
+    margin-top: 8px;
+}
+
+.guruguru .footer-info>.footer-link.text-m-18 {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.guruguru .footer-link>li:nth-child(3)::after {
+    display: none;
+}
+
+
+
+.guruguru .rel-site-box {
+    display: none;
+}
+
+
+
+.guruguru .f-add-flx {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+}
+
+.guruguru .add-name {
+    padding-left: 0px;
+
+}
+
+.add-loc {}
+
+
+
+.guruguru .footer-address>li {
+    display: flex;
+    column-gap: 8px;
+}
+
+
+.guruguru .f-add-sec {
+    margin-top: 16px;
+}
+
+.guruguru .footer-address>li>span:first-child {
+    min-width: 30px;
+}
+
+
+.guruguru .copyright {
+    display: none;
+}
+
+.guruguru .copyright.mob {
+    display: block;
+
+    grid-column: span 6;
+
+    margin-top: 0px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    text-align: center;
+
+    /* padding: 0 8px; */
+
+    margin-top: 16px;
+}
+
+
+.guruguru .sns-logo {
+    grid-column: 2 / span 4;
+
+}
+
+.guruguru .sns-logo-box {
+    justify-content: center;
+
+    margin: 7px 0;
+}
+
+
+
+/* 
+Sub page
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+ 
+/* ===== location-bar =====  */
+
+
+.location-bar {
+    padding: 8px 0 32px 0;
+    grid-column: span 4;
+} 
+
+
+
+/* ===== sub-page-hd =====  */
+
+.tab-menu {
+    display: none;
+}
+
+.tab-menu.s-mob {
+    display: block;
+}
+
+.tab-menu.s-mob .t-m-current {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.tab-menu.s-mob .tab-menu-box > li:nth-child(2) > ul {
+    justify-content: flex-start;
+}
+
+
+/* ===== Filter =====  */
+
+
+
+.filter {
+    margin: 16px 0;
+}
+
+
+.filter-l {
+    display: none;
+}
+
+
+.filter-r {
+    grid-column: span 6;
+
+    padding-left : 0;
+}
+
+
+.select-box {
+    width: 30%;
+}
+
+
+.select_style_1 {
+    z-index: 15;
+}
+
+.filter-search {
+    width: 70%;
+}
+
+
+
+/* ===== Sub-cnt-box ) card - style =====  */
+
+
+
+.sub-cnt-box {
+    grid-column: span 6;
+}
+
+
+
+.sub-cnt {
+    grid-column: span 6;
+}
+
+
+/* ===== Paginate =====  */
+
+.paginate {
+    display: none;
+}
+
+.paginate.s-mob {
+    display: flex;
+}
+
+
+/* ===== Sub-cnt-box ) list - style =====  */
+
+
+.sub-cnt.list-style {
+    position: relative;
+
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.sub-cnt.list-style:last-child {
+    border-bottom: none;
+}
+
+.sub-cnt.list-style:first-child .play-btn-box {
+
+    transform: translate(-50% , calc(-25% - 12px));
+
+}
+
+
+
+.sub-cnt.list-style>img {
+    grid-column: span 6;
+
+}
+
+.sub-cnt.list-style .sub-cnt-r {
+    grid-column: span 6;
+
+    position: static;
+}
+
+.sub-cnt.list-style .sub-cnt-r::after {
+    display: none;
+}
+
+
+.sub-cnt-r .sub-cnt-tit {
+    width: 100%;
+    text-align: center;
+    padding: 0 24px;
+
+}
+
+
+.sub-cnt-r > div:nth-child(2) {
+    width: 100%;
+}
+
+.sub-cnt-r .sub-cnt-txt.flx {
+    flex-direction: column;
+}
+
+.sub-cnt-r .sub-cnt-txt {
+    width: 100%;
+    padding: 24px 24px 16px 24px;
+}
+
+.sub-cnt-txt.list-style>li {
+    position: static;
+}
+
+.sub-cnt-txt-r {
+    min-width: 280px;
+}
+
+.sub-cnt-txt-r>ul>li {
+    color: #636871;
+
+    position: relative;
+}
+
+.sub-cnt-txt-r>ul>li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 17px;
+    left: 67px;
+    top: 5px;
+    background-color: #E5E7EB;
+}
+
+
+.sub-cnt-txt-r>ul>li>span {
+    color: #0054A6;
+}
+
+
+.play-btn-box {
+    margin-left: 0;
+
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50% , -25%);
+}
+
+
+/* 
+Sub page - Lecture video
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.v-num-info {
+    padding: 24px 8px 16px;
+}
+
+.v-num-info.flx {
+    align-self: flex-start;
+}
+
+
+.col-8-20.s-mob {
+    gap: 16px;
+}
+
+
+
+.v-info-tit {
+    grid-column: span 2;
+}
+
+.v-info-txt {
+    grid-column: span 4;
+    margin-left: 0;
+    
+}
+
+
+.lec-v-tag {
+    padding: 0;
+}
+
+
+.lec-v-btn {
+    grid-column: 5 / span 2;
+    margin-top: 40px;
+}
+
+
+/* ===== lecture video side =====  */
+
+.lec-v-side {
+    padding: 0 4px;
+}
+
+
+
+.col-2-c27 {
+    gap: 20px;
+}
+
+.side-cnt-pic {
+    grid-column: span 2;
+    margin-right: 24px;
+}
+
+.side-cnt-tit {
+    grid-column: span 2;
+    margin-left: -24px;
+    margin-right: 20px;
+
+    height: 42px;
+}
+
+.side-cnt-tit.text-r-16 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+
+
+/* 
+Swiper
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ===== visual slide =====  */
+
+/* .swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    display: none;
+} */
+
+
+.swiper-pagination-bullets {
+    display: none;
+}
+
+
+.swiper-pagination-fraction {
+    position: relative;
+
+    color: #9ca3af;
+
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+}

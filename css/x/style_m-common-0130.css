@@ -1,0 +1,479 @@
+@charset "utp-8";
+
+/* @import url('../css/style_t.css'); */
+@import url('../css/style_t-common.css');
+
+
+
+/* 
+K edu - Mobile 
+(min-width : 360px) ~ (max-width : 769px) 
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/*
+GENERAL STYLING
+================================================ */
+
+body {
+
+    min-width: 360px;
+
+}
+
+/*
+COMMON
+================================================ */
+
+.inner {
+
+    max-width: 320px;
+    /* padding: 0 20px; */
+
+}
+
+.col-12 {
+
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px 20px;
+}
+
+.section {
+    margin-top: 24px;
+}
+
+
+
+/* 
+index
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/*
+Header
+================================================ */
+
+
+.buibuibui .main-logo {
+    grid-column: span 3;
+}
+
+
+.buibuibui .utility ul>li.login,
+.buibuibui .utility ul>li.sign-up {
+    display: none;
+
+}
+
+
+
+
+/*
+Nav
+================================================ */
+
+
+
+
+
+nav.inner.nainainai {
+    max-width: 360px;
+    
+}
+
+nav.nainainai .nav-utility.mob {
+    display: flex;
+}
+
+
+/*
+Edu Search
+================================================ */
+
+.duiduidui .search-box {
+    display: none;
+}
+
+
+
+
+
+/*
+Main
+================================================ */
+
+.maimaimai .main-bg {
+    padding: 16px 0 20px;
+}
+
+
+
+/* ===== notice Box =====  */
+
+.maimaimai .notice-box {
+    height: 120px;
+}
+
+.maimaimai .notice-box.flx {
+
+    flex-direction: column;
+}
+
+.maimaimai .notice {
+    width: 100%;
+
+    justify-content: center;
+
+    padding: 18px 16px;
+
+
+}
+
+.maimaimai .notice-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.maimaimai .notice>h5 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+
+/* ===== notice Slide =====  */
+
+.maimaimai .notice-sld {
+    width: 100%;
+    padding: 16px 8px;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    height: 58px;
+}
+
+
+.maimaimai ul.dot>li>a {
+    /* height: 100%; */
+}
+
+
+
+/* ===== Visual-Sld =====  */
+
+.maimaimai .info-box h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+
+    padding: 8px 0 16px;
+
+}
+
+
+.maimaimai .info-txt {
+    padding: 20px 8px;
+}
+
+.maimaimai .info-box p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    word-break: break-all;
+}
+
+
+
+
+
+/*
+Curriculum
+================================================ */
+
+h2 {
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+
+}
+
+.cuicuicui .cur-box {
+    margin-top: 32px;
+}
+
+.cuicuicui .cur-cnt {
+    grid-column: span 3;
+}
+
+
+
+/*
+Lecture
+================================================ */
+
+
+
+.luiluilui .new-lec-hd {
+    margin-top: 48px;
+}
+
+
+.luiluilui .new-lec p.text-b-24 {
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+
+}
+
+.luiluilui .fraction.text-m-16 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+.luiluilui .pop-lec-hd {
+    margin-top: 36px;
+}
+
+.luiluilui .pop-lec p.text-b-24 {
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+
+}
+
+
+/* ===== Lecture-Sld =====  */
+
+.luiluilui .lt-sd-n.web,
+.luiluilui .lt-sd-n.tab {
+    display: none;
+}
+
+.luiluilui .lt-sd-n.mob {
+    display: block;
+}
+
+
+.luiluilui .lt-sd-p.web,
+.luiluilui .lt-sd-p.tab {
+    display: none;
+}
+
+.luiluilui .lt-sd-p.mob {
+    display: block;
+}
+
+
+.luiluilui .lec-cnt {
+    grid-column: span 6;
+
+    position: relative;
+}
+
+.luiluilui .lec-cnt>div.flx {
+    row-gap: 16px;
+}
+
+
+
+.luiluilui .lec-txt-l {
+    position: absolute;
+
+    top: 8px;
+    left: 8px;
+}
+
+.luiluilui .lec-tit {
+    margin-bottom: 8px;
+}
+
+
+
+
+/*
+Count
+================================================ */
+
+.coicoicoi .count {
+    display: none;
+}
+
+
+
+
+/*
+Footer
+================================================ */
+
+footer.fuifuifui {
+    margin-top: 48px;
+}
+
+.fuifuifui .banner-bar {
+    height: 39px;
+    padding: 8px 20px;
+
+    border-top: 1px solid #E5E7EB;
+}
+
+.fuifuifui .banner-bar>.inner.flx {
+    gap: 16px;
+    gap: 28px;
+    gap: 24px;
+}
+
+.fuifuifui .footer-box {
+    margin-top: 5px;
+}
+
+.fuifuifui .footer-logo {
+    grid-column: span 4;
+}
+
+.fuifuifui .footer-info {
+    order: 0;
+
+    grid-column: span 6;
+
+    margin-top: 8px;
+}
+
+.fuifuifui .footer-info>.footer-link.text-m-18 {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.fuifuifui .footer-link>li:nth-child(3)::after {
+    display: none;
+}
+
+
+
+.fuifuifui .rel-site-box {
+    display: none;
+}
+
+
+
+.fuifuifui .f-add-flx {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+}
+
+.fuifuifui .add-name {
+    padding-left: 0px;
+
+}
+
+.add-loc {}
+
+
+
+.fuifuifui .footer-address>li {
+    display: flex;
+    column-gap: 8px;
+}
+
+
+.fuifuifui .f-add-sec {
+    margin-top: 16px;
+}
+
+.fuifuifui .footer-address>li>span:first-child {
+    min-width: 30px;
+}
+
+
+.fuifuifui .copyright {
+    display: none;
+}
+
+.fuifuifui .copyright.mob {
+    display: block;
+
+    grid-column: span 6;
+
+    margin-top: 0px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    text-align: center;
+
+    /* padding: 0 8px; */
+
+    margin-top: 16px;
+}
+
+
+.fuifuifui .sns-logo {
+    grid-column: 2 / span 4;
+
+}
+
+.fuifuifui .sns-logo-box {
+    justify-content: center;
+
+    margin: 7px 0;
+}
+
+
+
+
+
+
+/* 
+Swiper
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ===== visual slide =====  */
+
+/* .swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    display: none;
+} */
+
+
+.swiper-pagination-bullets {
+    display: none;
+}
+
+
+.swiper-pagination-fraction {
+    position: relative;
+
+    color: #9ca3af;
+
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+}

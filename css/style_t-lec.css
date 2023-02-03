@@ -1,0 +1,575 @@
+@charset "utp-8";
+
+@import url('../css/style.css');
+
+
+
+/*
+K edu - Tablet 
+(min-width : 770px) ~ (max-width : 1339px)
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/*
+GENERAL STYLING
+================================================ */
+
+body {
+
+    min-width: 770px;
+
+}
+
+
+/*
+COMMON
+================================================ */
+
+.inner {
+
+    max-width: 730px;
+    /* padding: 0 20px; */
+
+}
+
+.col-12 {
+
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+}
+
+.section {
+    margin-top: 50px;
+}
+
+
+/* 
+index
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+Header
+================================================ */
+
+.hd > .inner.col-12 {
+
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+}
+
+
+
+.hd-nav {
+
+    display: none;
+
+}
+
+
+.utility {
+    grid-column: 5 / span 2;
+}
+
+.utility ul {
+    justify-content: flex-end;
+
+    padding: 8px 0 8px 8px;
+}
+
+.utility ul > li {
+    padding: 8px;
+}
+
+.utility ul > li:nth-child(1) {
+    padding: 8px;
+    padding-right: 7px;
+    
+    position: relative;
+}
+
+.utility ul > li:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 16px;
+
+    background-color: #9ca3af;
+
+    top: 14px;
+    right: 0;
+}
+
+.utility ul > li:nth-child(2) {
+    padding: 8px;
+    padding-left: 6px;
+}
+
+
+.utility ul > li:last-child {
+    padding: 0px;
+}
+
+.utility .id-pw-find {
+
+    display: none;
+} 
+
+
+.hd-m-btn {
+    display: block;
+
+    /* cursor: pointer; */
+
+    margin-left: 20px;
+}
+
+.hd-m-btn > .hd-m-menu {
+
+    width: 40px;
+    height: 40px;
+}
+
+.hd-m-btn > .hd-m-x {
+    width: 40px;
+    height: 40px;
+    
+    display: none;
+}
+
+
+
+/*
+Nav
+================================================ */
+
+nav.inner {
+    /* display: block; */
+    max-width: 770px;
+}
+
+nav .nav-bg {
+    /* display: block; */
+
+    width: 360px;
+
+    /* padding-bottom: 140px; */
+
+    /* position: absolute; */
+    right: 0;
+
+    border-bottom: none;
+    
+}
+
+nav .nav-bg>.inner {
+    max-width: 360px;
+    /* max-width: none; */
+
+    /* padding: 0 20px; */
+
+    row-gap: 0;
+}
+
+nav .nav-utility.mob {
+
+    grid-column: span 6;
+
+    display: flex;
+
+    text-align: center;
+
+    color: #0054A6;
+
+    border-bottom: 1px solid #E5E7EB;
+
+    display: none;
+
+}
+
+nav .nav-utility.mob>li {
+    width: 50%;
+}
+
+nav .nav-utility.mob>li>a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    padding: 13.5px 0;
+
+    background-color: #fff;
+
+
+}
+
+
+nav .nav-utility.mob>li:first-child>a {
+    border-right: 1px solid #E5E7EB;
+}
+
+
+
+
+nav .gnb {
+
+    grid-column: span 6;
+
+}
+
+nav .gnb.col-8 {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px
+}
+
+
+.gnb>li:first-child {
+    grid-column: span 6;
+}
+
+.nav-list {
+    grid-column: span 6;
+
+    padding: 0;
+
+    border-left: none;
+
+}
+
+
+.nav-list:first-child {
+    border-left: none;
+}
+
+.nav-list:hover .menu-title {
+    color: #111827;
+}
+
+.nav-list:hover::after {
+    display: none;
+}
+
+ul.sub>li:hover>a {
+    color: #636871;
+}
+
+
+.menu-title {
+    margin-bottom: 0;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+
+    padding: 18px 20px;
+
+    border-bottom: 1px solid #E5E7EB;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.menu-btn.mob {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    transition: all 300ms;
+}
+
+ul.gnb>li.on .menu-btn.mob{
+    transform: rotate(45deg);
+}
+
+
+
+
+
+.nav-list > ul.sub {
+    background-color: #F9FAFB;
+
+    display: none;
+}
+
+.nav-list > ul.sub>li {
+    padding: 0;
+
+}
+.nav-list > ul.sub>li:last-child {
+    border-bottom: 1px solid #E5E7EB;
+
+
+}
+
+
+.nav-list > ul.sub>li>a {
+    padding: 8.5px 20px 8.5px 20px ;
+}
+
+
+
+.nav-img-box {
+    display: none;
+}
+
+
+
+
+
+
+/*
+Edu Search
+================================================ */
+
+
+.search-box > .inner.col-12 {
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+}
+
+
+.edu-search {
+
+    grid-column: span 6;
+}
+
+
+
+/*
+Main
+================================================ */
+
+
+.main-bg {
+    padding: 37px 0 20px;
+
+    height: auto;
+}
+
+
+/* ===== notice Box =====  */
+
+
+.notice-box {
+    grid-column: span 6;
+
+    grid-row: 1/2;
+    
+}
+
+.notice {
+    padding: 23px 8px;
+    width: 140px;
+}
+
+/* ===== notice Slide =====  */
+
+
+.notice-sld {
+    width: calc(100% - 140px);
+
+}
+
+
+.swiper-btn.btn-nt {
+    display: none;
+}
+
+
+
+.nt-sd-web {
+    display: none;
+}
+.nt-sd-mob {
+    display: flex;
+}
+
+
+
+ul.dot>li {
+    grid-column: span 2;
+    padding-left: 30px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+ul.dot>li>a {
+    text-align: left;
+}
+
+
+/* ===== Visual-Sld =====  */
+
+.visual-sld {
+    grid-column: span 6;
+
+    /* order: 1; */
+
+    grid-row: 3/4;
+
+    height: auto;
+
+}
+
+
+.info-box {
+    grid-column: span 6;
+
+    grid-row: 2/3;
+
+    padding: 0;
+}
+
+.info-box p {
+    padding: 0;
+}
+
+.ytb-img {
+    padding-bottom: 0;
+}
+
+.ytb-img > img {
+    width: 100%;
+    /* max-width: 100%; */
+}
+
+.info-txt {
+
+    padding: 20px;
+}
+
+.info-box h4 {
+    padding: 8px 0;
+}
+
+
+/*
+Curriculum
+================================================ */
+
+.cur-box {
+    grid-column: span 6;
+}
+
+.cur-box.col-5 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.cur-cnt {
+    grid-column: span 2;
+}
+
+
+/*
+Lecture
+================================================ */
+
+.sec2.lecture > .inner {
+
+    /* padding-right: 0; */
+}
+
+.sec2.lecture > .inner h2 {
+
+    padding-right: 20px;
+}
+
+.new-lec-hd {
+    margin-top: 56px;
+    padding: 0px 5px 0 5px;
+
+    /* position: relative; */
+}
+
+
+
+.lec-box>.col-12 {
+    padding: 0 5px 5px 5px;
+
+    /* display: flex; */
+    /* overflow-x: scroll; */
+    /* flex-wrap: nowrap; */
+}
+
+.btn-lec.flx {
+    /* display: none; */
+}
+
+
+/* ===== Lecture-Sld =====  */
+
+.lt-sd-n.web,
+.lt-sd-n.mob {
+    display: none;
+}
+
+.lt-sd-n.tab {
+    display: block;
+}
+
+
+.lt-sd-p.web,
+.lt-sd-p.mob {
+    display: none;
+}
+
+.lt-sd-p.tab {
+    display: block;
+}
+
+
+
+
+
+/*
+Count
+================================================ */
+
+.count-box {
+    grid-column: span 6;
+    padding: 40px 0;
+}
+
+.count-box.flx {
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
+
+}
+
+/* .count-box.flx {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+}
+
+.count-box > div {
+    grid-column: span 2;
+} */
+
+
+
+
+/*
+Footer
+================================================ */
+
+.footer-box {
+    padding: 32px 0 40px 0;
+}
+
+.footer-info {
+    order: 1;
+
+    margin-top: 8px;
+}
+
+.sns-logo {
+    grid-column: 5 / span 2;
+}
+

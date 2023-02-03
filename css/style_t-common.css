@@ -1,0 +1,800 @@
+@charset "UTF-8";
+
+@import url('../css/style-common.css');
+
+
+
+/*
+K edu - Tablet 
+(min-width : 770px) ~ (max-width : 1339px)
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/*
+GENERAL STYLING
+================================================ */
+
+body {
+
+    min-width: 770px;
+
+}
+
+
+/*
+COMMON
+================================================ */
+
+.inner {
+
+    max-width: 730px;
+    /* padding: 0 20px; */
+
+}
+
+.col-12 {
+
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+}
+
+.section {
+    margin-top: 50px;
+}
+
+
+/* 
+index
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+Header
+================================================ */
+
+.guruguru .hd > .inner.col-12 {
+
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+}
+
+
+
+.guruguru .hd-nav {
+
+    display: none;
+
+}
+
+
+.guruguru .utility {
+    grid-column: 5 / span 2;
+}
+
+.guruguru .utility ul {
+    justify-content: flex-end;
+
+    padding: 8px 0 8px 8px;
+}
+
+.guruguru .utility ul > li {
+    padding: 8px;
+}
+
+.guruguru .utility ul > li:nth-child(1) {
+    padding: 8px;
+    padding-right: 7px;
+    
+    position: relative;
+}
+
+.guruguru .utility ul > li:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 16px;
+
+    background-color: #9ca3af;
+
+    top: 14px;
+    right: 0;
+}
+
+.guruguru .utility ul > li:nth-child(2) {
+    padding: 8px;
+    padding-left: 6px;
+}
+
+
+.guruguru .utility ul > li:last-child {
+    padding: 0px;
+}
+
+.guruguru .utility .id-pw-find {
+
+    display: none;
+} 
+
+
+.guruguru .hd-m-btn {
+    display: block;
+
+    /* cursor: pointer; */
+
+    margin-left: 20px;
+}
+
+.guruguru .hd-m-btn > .hd-m-menu {
+
+    width: 40px;
+    height: 40px;
+}
+
+.guruguru .hd-m-btn > .hd-m-x {
+    width: 40px;
+    height: 40px;
+    
+    display: none;
+}
+
+
+
+/*
+Nav
+================================================ */
+
+.guruguru nav.inner {
+    /* display: block; */
+    max-width: 770px;
+}
+
+.guruguru nav .nav-bg {
+    /* display: block; */
+
+    width: 360px;
+
+    /* padding-bottom: 140px; */
+
+    /* position: absolute; */
+    right: 0;
+
+    border-bottom: none;
+    
+}
+
+.guruguru nav .nav-bg>.inner {
+    max-width: 360px;
+    /* max-width: none; */
+
+    /* padding: 0 20px; */
+
+    row-gap: 0;
+}
+
+.guruguru nav .nav-utility.mob {
+
+    grid-column: span 6;
+
+    display: flex;
+
+    text-align: center;
+
+    color: #0054A6;
+
+    border-bottom: 1px solid #E5E7EB;
+
+    display: none;
+
+}
+
+.guruguru nav .nav-utility.mob>li {
+    width: 50%;
+}
+
+.guruguru nav .nav-utility.mob>li>a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    padding: 13.5px 0;
+
+    background-color: #fff;
+
+
+}
+
+
+.guruguru nav .nav-utility.mob>li:first-child>a {
+    border-right: 1px solid #E5E7EB;
+}
+
+
+
+
+.guruguru nav .gnb {
+
+    grid-column: span 6;
+
+}
+
+.guruguru nav .gnb.col-8 {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px
+}
+
+
+.guruguru .gnb>li:first-child {
+    grid-column: span 6;
+}
+
+.guruguru .nav-list {
+    grid-column: span 6;
+
+    padding: 0;
+
+    border-left: none;
+
+}
+
+
+.guruguru .nav-list:first-child {
+    border-left: none;
+}
+
+.guruguru .nav-list:last-child {
+    border-right: none;
+}
+
+.guruguru .nav-list:hover .menu-title {
+    color: #111827;
+}
+
+.guruguru .nav-list:hover::after {
+    display: none;
+}
+
+.guruguru ul.sub>li:hover>a {
+    color: #636871;
+}
+
+
+.guruguru .menu-title {
+    margin-bottom: 0;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+
+    padding: 18px 20px;
+
+    border-bottom: 1px solid #E5E7EB;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.guruguru .menu-btn.mob {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    transition: all 300ms;
+}
+
+.guruguru ul.gnb>li.on .menu-btn.mob{
+    transform: rotate(45deg);
+}
+
+
+
+
+
+.guruguru .nav-list > ul.sub {
+    background-color: #F9FAFB;
+
+    display: none;
+}
+
+.guruguru .nav-list > ul.sub>li {
+    padding: 0;
+
+}
+.guruguru .nav-list > ul.sub>li:last-child {
+    border-bottom: 1px solid #E5E7EB;
+
+
+}
+
+
+.guruguru .nav-list > ul.sub>li>a {
+    padding: 8.5px 20px 8.5px 20px ;
+}
+
+
+
+.guruguru .nav-img-box {
+    display: none;
+}
+
+
+
+
+
+
+/*
+Edu Search
+================================================ */
+
+.guruguru .search-box {
+    border-bottom: 0;
+}
+
+
+.guruguru .search-box > .inner.col-12 {
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+}
+
+
+.guruguru .edu-search {
+
+    grid-column: span 6;
+}
+
+
+
+/*
+Main
+================================================ */
+
+
+.guruguru .main-bg {
+    padding: 37px 0 20px;
+
+    height: auto;
+}
+
+
+/* ===== notice Box =====  */
+
+
+.guruguru .notice-box {
+    grid-column: span 6;
+
+    grid-row: 1/2;
+    
+}
+
+.guruguru .notice {
+    padding: 23px 8px;
+    width: 140px;
+}
+
+/* ===== notice Slide =====  */
+
+
+.guruguru .notice-sld {
+    width: calc(100% - 140px);
+
+}
+
+
+.guruguru .swiper-btn.btn-nt {
+    display: none;
+}
+
+
+
+.guruguru .nt-sd-web {
+    display: none;
+}
+.guruguru .nt-sd-mob {
+    display: flex;
+}
+
+
+
+.guruguru ul.dot>li {
+    grid-column: span 2;
+    padding-left: 30px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.guruguru ul.dot>li>a {
+    text-align: left;
+}
+
+
+/* ===== Visual-Sld =====  */
+
+.guruguru .visual-sld {
+    grid-column: span 6;
+
+    /* order: 1; */
+
+    grid-row: 3/4;
+
+    height: auto;
+
+}
+
+
+.guruguru .info-box {
+    grid-column: span 6;
+
+    grid-row: 2/3;
+
+    padding: 0;
+}
+
+.guruguru .info-box p {
+    padding: 0;
+}
+
+.guruguru .ytb-img {
+    padding-bottom: 0;
+}
+
+.guruguru .ytb-img > img {
+    width: 100%;
+    /* max-width: 100%; */
+}
+
+.guruguru .info-txt {
+
+    padding: 20px;
+}
+
+.guruguru .info-box h4 {
+    padding: 8px 0;
+}
+
+
+/*
+Curriculum
+================================================ */
+
+.guruguru .cur-box {
+    grid-column: span 6;
+}
+
+.guruguru .cur-box.col-5 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.guruguru .cur-cnt {
+    grid-column: span 2;
+}
+
+
+/*
+Lecture
+================================================ */
+
+.guruguru .sec2.lecture > .inner {
+
+    /* padding-right: 0; */
+}
+
+.guruguru .sec2.lecture > .inner h2 {
+
+    padding-right: 20px;
+}
+
+.guruguru .new-lec-hd {
+    margin-top: 56px;
+    padding: 0px 5px 0 5px;
+
+    /* position: relative; */
+}
+
+
+.guruguru .fraction {
+    display: block;
+
+    color: #9ca3af;
+}
+
+.guruguru .fraction > .f-current {
+    color: #636871;
+}
+
+
+
+.guruguru .lec-box>.col-12 {
+    padding: 0 5px 5px 5px;
+
+    /* display: flex; */
+    /* overflow-x: scroll; */
+    /* flex-wrap: nowrap; */
+}
+
+.guruguru .btn-lec.flx {
+    display: none;
+}
+
+
+/* ===== Lecture-Sld =====  */
+
+.guruguru .lt-sd-n.web,
+.guruguru .lt-sd-n.mob {
+    display: none;
+}
+
+.guruguru .lt-sd-n.tab {
+    display: block;
+}
+
+
+.guruguru .lt-sd-p.web,
+.guruguru .lt-sd-p.mob {
+    display: none;
+}
+
+.guruguru .lt-sd-p.tab {
+    display: block;
+}
+
+
+
+
+
+/*
+Count
+================================================ */
+
+.guruguru .count-box {
+    grid-column: span 6;
+    padding: 40px 0;
+}
+
+.guruguru .count-box.flx {
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
+
+}
+
+/* .count-box.flx {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+}
+
+.count-box > div {
+    grid-column: span 2;
+} */
+
+
+
+
+/*
+Footer
+================================================ */
+
+.guruguru .footer-box {
+    padding: 32px 0 40px 0;
+}
+
+.guruguru .footer-info {
+    order: 1;
+
+    margin-top: 8px;
+}
+
+.guruguru .sns-logo {
+    grid-column: 5 / span 2;
+}
+
+
+  
+
+
+/* 
+Sub page
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ===== sub-page-hd =====  */
+
+.sub-page-tit {
+    margin-top: 11px;
+}
+
+
+.tab-menu {
+    grid-column: span 6;
+}
+
+
+
+
+/* ===== Filter =====  */
+
+
+/* .col-12.filter {
+
+    display: flex;
+    justify-content: space-between;
+
+} */
+
+
+.filter {
+    margin-top: 20px;
+}
+
+
+
+.filter-r {
+    grid-column: span 4;
+    padding-left: 27px;
+}
+
+
+.sub-cnt img {
+    width: 100%;
+}
+
+
+/* ===== Sub-cnt-box ) list - style =====  */
+
+
+.sub-cnt.list-style>img {
+    grid-column: span 2;
+
+}
+
+.sub-cnt.list-style .sub-cnt-r {
+    grid-column: span 4;
+
+    position: relative;
+}
+
+.sub-cnt-r .sub-cnt-tit {
+    width: 100%;
+}
+
+.sub-cnt-r .sub-cnt-txt {
+    width: 480px;
+}
+
+
+
+/* 
+Sub page - Lecture video
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+ 
+
+.location-bar {
+    padding: 24px 0 40px 0;
+}
+
+
+.lec-v-cnt {
+    grid-column: span 6;
+}
+
+
+.lec-v-tit>h4 {
+    margin-top: 0;
+}
+
+
+.col-8-20 {
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+}
+
+
+.v-info-txt {
+    grid-column: span 5;
+    margin-left: -7px;
+}
+
+.lec-v-btn {
+    grid-column: 6 / span 1;
+
+    margin-top: 72px;
+    margin-bottom: 20px;
+}
+
+
+/* ===== lecture video side =====  */
+
+
+.lec-v-side {
+
+    grid-column: span 6;
+
+    border-left: none;
+
+    margin-top: 0;
+    margin-left: 0;
+
+    padding: 0 16px;
+
+    margin-bottom: 40px;
+}
+
+.lec-v-side .text-r-18 {
+
+    /* font-weight: 500;
+    font-size: 14px;
+    line-height: 18px; */
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.col-2-c27 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.v-side-tit.s-mob {
+    display: none;
+}
+
+.v-side-cnt-box.s-mob {
+    display: none;
+}
+
+.v-side-cnt-box {
+    margin-bottom: 16px;
+}
+
+.v-side-cnt {
+    grid-column: span 4;
+}
+
+.side-cnt-tit {
+    grid-column: span 3;
+    word-break: break-all;
+    margin-right: 27px;
+
+    /* width: 100%; */
+}
+
+
+
+
+
+
+
+/* 
+Swiper
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+.swiper-pagination.n-lec,
+.swiper-pagination.p-lec {
+    display: block;
+}
+
+.swiper-pagination-fraction {
+    position: relative;
+
+    color: #9ca3af;
+
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    bottom: 0;
+
+    width: auto;
+}
+
+.swiper-pagination-current {
+    color: #636871;
+
+}
