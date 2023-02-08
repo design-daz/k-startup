@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utp-8";
 
 @import url('../css/style-common.css');
 
@@ -763,6 +763,133 @@ Sub page - Lecture video
 
     /* width: 100%; */
 }
+
+
+/* 
+[6.0.0] Introduce page
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+Introduce
+================================================ */
+
+
+.intro-cnt-box .col-10 {
+    grid-template-columns: repeat(6,1fr);
+}
+
+.intro-cnt {
+    grid-column: span 6;
+    margin-bottom: 72px;
+}
+
+.side-tit {
+    grid-column: span 6;
+    margin-bottom: 16px;
+
+}
+
+.side-txt {
+    grid-column: span 6;
+    padding-right: 0;
+
+}
+
+.side-img {
+    grid-column: span 6;
+    
+}
+
+
+/* 
+[6.1.0] Usage page
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+Usage
+================================================ */
+
+.usage-cnt {
+    grid-column: span 6;
+}
+
+.usage-cur {
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.usage-step-box {
+    margin-bottom: 40px;
+
+    padding : 0 16px
+}
+
+.usage-step-desc {
+    padding : 0 16px
+
+}
+
+
+
+.usage-step-desc > ul {
+    margin-bottom: 24px;
+}
+
+
+.m-b-24{
+    margin-bottom: 24px;
+}
+
+
+
+
+/* 
+[6.2.0] Manual page
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+Manual
+================================================ */
+
+.usage-cnt.manual {
+    grid-column: span 6;
+
+    padding: 0;
+}
+
+.usage-cnt.manual .usage-txt.manual {
+    padding-left: 0;
+}
+
+.usage-txt.manual {
+    padding-right: 0;
+}
+
+
+
+.usage-cnt.manual>ul:first-child {
+
+    margin-bottom: 40px;
+
+}
+
+.manual-icon-box {
+    margin-bottom: 40px;
+}
+
+.manual-desc {
+    padding: 0;
+}
+
+.manual-desc > ul:first-child {
+    margin-bottom: 40px;
+}
+
+
+
 
 
 
