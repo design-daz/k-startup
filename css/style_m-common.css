@@ -851,15 +851,145 @@ Manual
 }
 
 
+/* 
+[6.3.0] Notice page
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+Notice-page
+================================================ */
+
+
+.col-10.notice-page {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 16px;
+}
 
 
 
+.filter.notice-page .filter-r {
+    grid-column: span 6;
+}
+
+.notice-list-box {
+    grid-column: span 6;
+}
 
 
+.notice-hd > p:first-child {
+    grid-column: span 2;
+
+}
+
+.notice-hd > p:nth-child(2) {
+    grid-column: span 5;
+
+}
+
+.notice-hd > p:last-child {
+    grid-column: span 3;
+
+}
+
+.notice-top > p:first-child,
+.notice-list > p:first-child {
+    grid-column: span 2;
+
+}
+
+.notice-top > p:nth-child(2), 
+.notice-list > p:nth-child(2) {
+    grid-column: 3 / span 5;   
+
+}
+
+.notice-top > p:last-child, 
+.notice-list > p:last-child {
+    grid-column: span 3;
 
 
+}
 
 
+/* 
+[6.4.0] Notice page content
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+Notice-page-content
+================================================ */
+
+.notice-page-hd {
+    grid-column: span 6;
+}
+
+.notice-page-hd > p {
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    margin-bottom: 8px;
+}
+
+
+.ntc-page-tit {
+    flex-direction: column;
+
+    padding-bottom: 16px;
+}
+
+.ntc-page-tit > h4 {
+    text-align: left;
+    padding-bottom: 16px;
+}
+
+.ntc-page-tit > p {
+    text-align: left;
+
+    padding-bottom: 0;
+
+    align-self: flex-start;
+    
+
+}
+
+
+.notice-page-txt {
+    min-height: 600px;
+
+    grid-column: span 6;
+}
+
+.view-ntc-page {
+    grid-column: span 6;
+}
+
+
+.view-ntc-page-box span {
+    grid-column: span 2;
+}
+
+.ntc-page-link {
+    grid-column: span 8;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+
+.view-ntc-btn-box {
+    grid-column: 5 / span 2;
+}
+
+.view-ntc-btn {
+    margin: 40 px 0;
+}
 
 
 

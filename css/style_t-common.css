@@ -890,10 +890,57 @@ Manual
 
 
 
+/* 
+[6.3.0] Notice page
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+Notice-page
+================================================ */
+
+.col-10.notice-page {
+    grid-column: span 6;
+}
+
+.filter.notice-page .filter-l {
+    grid-column: span 5;
+
+}
+
+.filter.notice-page .filter-r {
+    grid-column: span 5;
+}
+
+
+.notice-top > p:first-child, 
+.notice-list > p:first-child {
+    text-align: center;
+}
+
+.notice-top > p:first-child > span {
+    margin-left: 0;
+}
+
+
+/* 
+[6.4.0] Notice page content
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+Notice-page-content
+================================================ */
 
 
 
+.notice-page-txt {
+    min-height: 480px;
+}
 
+.view-ntc-btn {
+    margin: 60px 0;
+}
 
 
 
