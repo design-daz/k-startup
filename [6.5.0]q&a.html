@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>K-startup edu</title>
-    <meta name="K-startup edu" content="K-startup edu notice-page ">
+    <meta name="K-startup edu" content="K-startup edu q&a ">
 
     <!-- 파비콘 -->
     <!-- <link rel="icon" type="image/svg+xml" href="../images/favi.svg"> -->
@@ -40,7 +40,7 @@
 
 <body>
 
-    <!-- =============== [6.3.0] Notice page =============== -->
+    <!-- =============== [6.5.0] Q&A =============== -->
 
 
     <div class="guruguru">
@@ -210,7 +210,7 @@
 
 
 
-        <!-- =============== Notice-page =============== -->
+        <!-- =============== Q&A =============== -->
 
 
         <div class="sub-page notice-page">
@@ -273,13 +273,42 @@
                             </p>
                         </div>
 
-                        <div class="filter-r">
+                        <div class="filter-r qna">
 
 
                             <div class="f-select-box f-search-box flx">
 
 
-                                <form class="filter-search flx notice-page">
+                                <div class="col-0 select_style_1_wrap select-box qna">
+                                    <input type="hidden" name="conditionList[1].searchCondition" value="order">
+                                    <select class="select_style_1" name="conditionList[1].searchKeyword"
+                                        id="orderSelect" onchange="$('#searchForm').submit();" data-wv-com="selectbox"
+                                        title="정렬순서" style="display: none;">
+                                        <option value="all-arr" selected="">전체</option>
+                                        <option value="recent">시스템문의</option>
+                                        <option value="popular">과정등록문의</option>
+                                        <option value="lectureNm">학습문의</option>
+                                    </select>
+
+
+                                    <div class="selected_item_con bm_select_box text-r-16">
+                                        <div class="selected_item flx">전체
+                                            <div class="f-select-arr"></div>
+                                        </div>
+                                        <div class="select_style_1_con">
+                                            <ul class="select_style_1">
+                                                <!-- <li data-value="all-arr"><a href="#">전체</a></li> -->
+
+                                                <li data-value="recent"><a href="#">시스템문의</a></li>
+                                                <li data-value="popular"><a href="#">과정등록문의</a></li>
+                                                <li data-value="lectureNm"><a href="#">학습문의</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <form class="filter-search flx notice-page qna">
                                     <input class="f-search-txt text-r-16" id="" type="text" placeholder="검색어를 입력해주세요.">
 
                                     <input class="f-search-btn" id="" type="button" placeholder="교육 과정 검색"
@@ -293,49 +322,227 @@
                         </div>
 
 
-                        <ul class="notice-list-box text-r-16">
-                            <li class="col-10 notice-hd text-r-18">
-                                <p>번호</p>
-                                <p>공지사항</p>
-                                <p>작성일</p>
+                        <ul class="notice-list-box text-r-16 qna">
+                            <li class="col-10 notice-hd text-r-18 qna">
+                                <p>카테고리명</p>
+                                <p>질문</p>
 
                             </li>
 
-                            <li class="col-10 notice-top">
-                                <p><span>TOP</span></p>
-                                <p>창업에듀 동시접속 수강 안내 창업에듀 동시접속 수강 안내 창업에듀 동시접속 수강 안내 창업에듀 동시접속 수강 안내</p>
-                                <p>2023-01-11</p>
+                            <!-- Q&A Accordion -->
 
-                            </li>
-                            <li class="col-10 notice-top">
-                                <p><span>TOP</span></p>
-                                <p>창업에듀 로그인 안내</p>
-                                <p>2023-01-11</p>
+                            <!-- Q-1 -->
+                            <li class="que col-10 qna-q">
+                                <div class="qna-category flx">
+                                    <img src="./images/qna-icon.png" alt="qna-icon">
+                                    <p class="text-r-16">[학습문의]</p>
+                                </div>
 
-                            </li>
-                            <li class="col-10 notice-top">
-                                <p><span>TOP</span></p>
-                                <p>인터넷 익스플로러 학습 제한 안내</p>
-                                <p>2023-01-11</p>
-
+                                <div class="qna-tit flx">
+                                    <p class="text-r-16">수료기준이 궁금합니다.</p>
+                                    <div class="qna-arr"></div>
+                                </div>
                             </li>
 
+                            <li class="anw qna-a">
+                                <div class="qna-text col-10">
+                                    <div class="qna-text-box">
+                                        <p><b>[개별강좌]</b></p>
+                                        <p>강의를 재생 후 끝까지 시청하면 수료됩니다.</p>
 
-                            <li class="col-10 notice-list">
-                                <p>11</p>
-                                <p>창업에듀 점검 안내 (12.25~12.31) 창업에듀 점검 안내 (12.25~12.31) 창업에듀 점검 안내 (12.25~12.31)</p>
-                                <p>2023-01-11</p>
+                                        <br>
+
+                                        <p><b>[패키지과정]</b></p>
+                                        <p>수강신청 후 구성 강좌 리스트에 있는 전체 강의 시청 및 퀴즈풀기를 진행해야 수료됩니다.</p>
+
+                                    </div>
+                                </div>
                             </li>
-                            <li class="col-10 notice-list">
-                                <p>10</p>
-                                <p>창업에듀 점검 안내 (12.25~12.31)</p>
-                                <p>2023-01-11</p>
+
+
+                            <!-- Q-2 -->
+                            <li class="que col-10 qna-q">
+                                <div class="qna-category flx">
+                                    <img src="./images/qna-icon.png" alt="qna-icon">
+                                    <p class="text-r-16">[시스템문의]</p>
+                                </div>
+
+                                <div class="qna-tit flx">
+                                    <p class="text-r-16">동시 접속으로 인해 수료처리가 되지 않습니다.</p>
+                                    <div class="qna-arr"></div>
+                                </div>
                             </li>
-                            <li class="col-10 notice-list">
-                                <p>9</p>
-                                <p>창업에듀 점검 안내 (12.25~12.31)</p>
-                                <p>2023-01-11</p>
+
+                            <li class="anw qna-a">
+                                <div class="qna-text col-10">
+                                    <div class="qna-text-box">
+                                        <p>창업에듀는 동시 수강이 불가함에 따라 아래와 같은 환경에서</p>
+                                        <p>동시진행으로 인한 진도율 미반영 팝업이 발생할 수 있는 점 학습에 참고 부탁드립니다.</p>
+
+                                        <br>
+
+                                        <p><b>1. PC 와 모바일로 동시 로그인하여 학습하는 경우</b></p>
+                                        <p><b>2. 다른 브라우저로 동시 로그인하여 학습하는 경우</b></p>
+
+                                        <br>
+
+                                        <p>위의 사항에도 해당하지 않는 경우 쿠키 삭제 후 학습을 진행해주시기 바랍니다.</p>
+
+
+
+                                        <br>
+
+                                        <p><b>* 쿠키삭제 진행</b></p>
+
+                                        <p> &nbsp; &nbsp; · 크롬(Chrome) : </p>
+
+                                        <p>&nbsp; &nbsp; &nbsp; 설정 > 개인정보 및 보안 > 인터넷 사용 기록 삭제 > 삭제 > 전체 창 종료 > 창업에듀 접속</p>
+                                        
+                                        <p> &nbsp; &nbsp; · 엣지(Microsoft Edge) : </p>
+
+                                        <p>&nbsp; &nbsp; &nbsp; 설정 > 개인정보 및 보안 > 인터넷 사용 기록 삭제 > 삭제 > 전체 창 종료 > 창업에듀 접속</p>
+                                        
+                                        <p> &nbsp; &nbsp; · 웨일(Naver whale) </p>
+
+                                        <p>&nbsp; &nbsp; &nbsp; 설정 > 개인정보 및 보안 > 인터넷 사용 기록 삭제 > 삭제 > 전체 창 종료 > 창업에듀 접속</p>
+                                        
+                                        <br>
+
+                                        <p>동일한 오류가 지속적으로 발생할 경우</p>
+                                        <p>학습지원센터 (070-5066-0407) 혹은 1:1 문의게시판에 남겨주시면 답변드리겠습니다.</p>
+
+                                        <br>
+
+                                        <p>감사합니다.</p>
+                                        
+
+                                    </div>
+                                </div>
                             </li>
+
+                            <!-- Q-3 -->
+                            <li class="que col-10 qna-q">
+                                <div class="qna-category flx">
+                                    <img src="./images/qna-icon.png" alt="qna-icon">
+                                    <p class="text-r-16">[학습문의]</p>
+                                </div>
+
+                                <div class="qna-tit flx">
+                                    <p class="text-r-16">수료증 발급은 어떻게 하나요?</p>
+                                    <div class="qna-arr"></div>
+                                </div>
+                            </li>
+
+                            <li class="anw qna-a">
+                                <div class="qna-text col-10">
+                                    <div class="qna-text-box">
+                                        <p><b>1. 개별강좌</b></p>
+                                        <p>[마이페이지] → [나의 강의실] → 학습완료 개별강좌 → '수강확인증' 버튼 클릭</p>
+                                        <p><span>* 개별강좌 통합 수료증이 필요한 경우 전체 선택 후 오른쪽 상단 '통합 수강확인증 출력' 클릭</span></p>
+
+
+                                        <br>
+
+                                        <p><b>2. 패키지과정</b></p>
+                                        <p>[마이페이지] → [나의 강의실] → 학습완료 패키지 과정 → '수료증' 버튼 클릭</p>
+                                        <p><span>* 패키지과정은 개별 수료증 발급만 가능합니다.</span></p>
+
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Q-4 -->
+                            <li class="que col-10 qna-q">
+                                <div class="qna-category flx">
+                                    <img src="./images/qna-icon.png" alt="qna-icon">
+                                    <p class="text-r-16">[학습문의]</p>
+                                </div>
+
+                                <div class="qna-tit flx">
+                                    <p class="text-r-16">수강신청 방법을 알고 싶습니다.</p>
+                                    <div class="qna-arr"></div>
+                                </div>
+                            </li>
+
+                            <li class="anw qna-a">
+                                <div class="qna-text col-10">
+                                    <div class="qna-text-box">
+                                        <p><b>[1. 개별강좌]</b></p>
+                                        <img src="./images/qna-img-01.png" alt="qna img 01">
+
+                                        <br>
+                                        <br>
+                                        <br>
+
+
+                                        <p><b>[2. 패키지과정]</b></p>
+                                        <img src="./images/qna-img-02.png" alt="qna img 02">
+                                        
+
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Q-5 -->
+                            <li class="que col-10 qna-q">
+                                <div class="qna-category flx">
+                                    <img src="./images/qna-icon.png" alt="qna-icon">
+                                    <p class="text-r-16">[시스템문의]</p>
+                                </div>
+
+                                <div class="qna-tit flx">
+                                    <p class="text-r-16">동시 접속으로 인해 수료처리가 되지 않습니다.</p>
+                                    <div class="qna-arr"></div>
+                                </div>
+                            </li>
+
+                            <li class="anw qna-a">
+                                <div class="qna-text col-10">
+                                    <div class="qna-text-box">
+                                        <p><b>[개별강좌]</b></p>
+                                        <p>강의를 재생 후 끝까지 시청하면 수료됩니다.</p>
+
+                                        <br>
+
+                                        <p><b>[패키지과정]</b></p>
+                                        <p>수강신청 후 구성 강좌 리스트에 있는 전체 강의 시청 및 퀴즈풀기를 진행해야 수료됩니다.</p>
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Q-6 -->
+                            <li class="que col-10 qna-q">
+                                <div class="qna-category flx">
+                                    <img src="./images/qna-icon.png" alt="qna-icon">
+                                    <p class="text-r-16">[시스템문의]</p>
+                                </div>
+
+                                <div class="qna-tit flx">
+                                    <p class="text-r-16">동시 접속으로 인해 수료처리가 되지 않습니다.</p>
+                                    <div class="qna-arr"></div>
+                                </div>
+                            </li>
+
+                            <li class="anw qna-a">
+                                <div class="qna-text col-10">
+                                    <div class="qna-text-box">
+                                        <p><b>[개별강좌]</b></p>
+                                        <p>강의를 재생 후 끝까지 시청하면 수료됩니다.</p>
+
+                                        <br>
+
+                                        <p><b>[패키지과정]</b></p>
+                                        <p>수강신청 후 구성 강좌 리스트에 있는 전체 강의 시청 및 퀴즈풀기를 진행해야 수료됩니다.</p>
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+
 
                         </ul>
 
