@@ -201,4 +201,19 @@ $(document).ready(function () {
   $(".selected_item_con").click(function () {
     $(this).find(".select_style_1_con").stop().toggle();
   });
+
+
+
+  // ====== [6.5.0] q&a Accordion  ===== //
+
+
+  $(".que").click(function() {
+    $(this).next(".anw").stop().slideToggle(0);
+   $(this).toggleClass('on').siblings().removeClass('on');
+   $(this).next(".anw").siblings(".anw").slideUp(0); // 1개씩 펼치기
+ });
+
+
+
+
 }); //ready end
