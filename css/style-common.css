@@ -3458,7 +3458,7 @@ Notice-page-content
 
 }
 
-.notice-page-hd > p {
+.notice-page-hd>p {
     margin-bottom: 16px;
     text-align: left;
 }
@@ -3471,7 +3471,7 @@ Notice-page-content
     column-gap: 20px;
 }
 
-.ntc-page-tit > h4 {
+.ntc-page-tit>h4 {
     padding-bottom: 24px;
     line-height: 48px;
 
@@ -3480,7 +3480,7 @@ Notice-page-content
     word-break: keep-all;
 }
 
-.ntc-page-tit > p {
+.ntc-page-tit>p {
     color: #636871;
 
     align-self: flex-end;
@@ -3514,7 +3514,7 @@ Notice-page-content
     text-align: left;
 }
 
-.view-ntc-page-box >li:first-child {
+.view-ntc-page-box>li:first-child {
     border-bottom: 1px solid #E5E7EB;
 }
 
@@ -3533,22 +3533,23 @@ Notice-page-content
     padding: 16px 0;
 
     color: #636871;
-    
+
 }
 
 
-.ntc-page-link >a:hover {
+.ntc-page-link>a:hover {
     text-decoration: underline;
 }
 
- 
+
 
 .view-ntc-btn-box {
 
     grid-column: 10/ span 1;
 
 }
-.view-ntc-btn{
+
+.view-ntc-btn {
 
     margin-top: 72px;
     margin-bottom: 72px;
@@ -3583,9 +3584,150 @@ Notice-page-content
 Q&A
 ================================================ */
 
+
+
 .filter.notice-page.qna .filter-l {
     grid-column: span 4;
 }
+
+
+.filter.notice-page .filter-r.qna {
+    grid-column: 7/span 4;
+}
+
+
+
+.select-box.qna {
+    width: 25%;
+}
+
+.filter-search.notice-page.qna {
+    width: 75%;
+}
+
+
+.notice-hd.qna>p:first-child {
+    grid-column: span 3;
+}
+
+.notice-hd.qna>p:last-child {
+    grid-column: span 7;
+}
+
+
+
+
+/*
+Q&A Accordion
+================================================ */
+
+
+
+.qna-category {
+    grid-column: span 2;
+
+    padding: 24px 0;
+    padding-left: 16px;
+
+
+}
+
+.qna-category>img {
+    margin-right: 12px;
+}
+
+.qna-category>p {
+    color: #0054A6;
+}
+
+.qna-tit {
+    grid-column: span 8;
+
+    justify-content: space-between;
+
+    padding: 24px 0;
+    padding-right: 16px;
+}
+
+.qna-tit>p {
+    color: #636871;
+
+    text-align: left;
+    word-break: keep-all;
+}
+
+.qna-tit:hover > p {
+    text-decoration: underline;
+}
+
+.qna-arr {
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../images/qna-arr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    min-width: 24px;
+
+}
+
+.que.on > .qna-tit > .qna-arr {
+    transform: rotate(-180deg);
+}
+
+
+
+
+.anw {
+    display: none;
+}
+
+
+
+
+.qna-text  {
+    padding: 32px 0;
+
+    background-color:  #F9FAFB;
+
+    cursor: default;
+}
+
+.qna-text > .qna-text-box {
+    grid-column: 3/span 8;
+
+    text-align: left;
+
+    padding-right: 32px;
+
+    cursor: auto;
+}
+
+
+.qna-text-box > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #636871;
+
+    padding-bottom: 4px;
+
+    word-break: keep-all;
+
+}
+
+.qna-text-box > p > b {
+    color: #111827;
+}
+
+.qna-text-box > p > span {
+    color: #0054A6;
+}
+
+
 
 
 

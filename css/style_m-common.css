@@ -992,6 +992,63 @@ Notice-page-content
 }
 
 
+/* 
+[6.5.0] Q&A
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+Q&A
+================================================ */
+
+.select-box.qna {
+    width: 34%;
+}
+
+.filter-search.notice-page.qna {
+    width: 66%;
+}
+
+
+.notice-hd.qna>p:first-child {
+    display: none;
+}
+
+.notice-hd.qna>p:last-child {
+    grid-column: span 10;
+}
+
+
+
+.filter.notice-page .filter-r.qna {
+    grid-column: span 6;
+}
+
+.qna-category {
+    grid-column: span 10;
+
+    padding: 16px;
+    padding-bottom: 4px;
+}
+
+.qna-tit {
+    grid-column: span 10;
+
+    padding: 16px;
+
+    padding-left: 54px;
+    padding-top: 4px;
+
+
+}
+
+.qna-text > .qna-text-box
+{
+    grid-column: span 10;
+    padding: 0 16px 0 54px;
+
+}
+
 
 /* 
 Swiper
