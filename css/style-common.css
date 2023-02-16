@@ -330,6 +330,9 @@ h5 {
 
 }
 
+.text-color {
+    color: #111827;
+}
 
 
 
@@ -3656,7 +3659,7 @@ Q&A Accordion
     word-break: keep-all;
 }
 
-.qna-tit:hover > p {
+.qna-tit:hover>p {
     text-decoration: underline;
 }
 
@@ -3673,7 +3676,7 @@ Q&A Accordion
 
 }
 
-.que.on > .qna-tit > .qna-arr {
+.que.on>.qna-tit>.qna-arr {
     transform: rotate(-180deg);
 }
 
@@ -3687,15 +3690,15 @@ Q&A Accordion
 
 
 
-.qna-text  {
+.qna-text {
     padding: 32px 0;
 
-    background-color:  #F9FAFB;
+    background-color: #F9FAFB;
 
     cursor: default;
 }
 
-.qna-text > .qna-text-box {
+.qna-text>.qna-text-box {
     grid-column: 3/span 8;
 
     text-align: left;
@@ -3706,7 +3709,7 @@ Q&A Accordion
 }
 
 
-.qna-text-box > p {
+.qna-text-box>p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -3719,16 +3722,527 @@ Q&A Accordion
 
 }
 
-.qna-text-box > p > b {
+.qna-text-box>p>b {
     color: #111827;
 }
 
-.qna-text-box > p > span {
+.qna-text-box>p>span {
     color: #0054A6;
 }
 
 
 
+/* 
+[7.0.0] My page > running-package-lecture
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+running-package-lecture
+================================================ */
+
+
+.my-page-tab {
+    grid-column: span 12;
+
+    margin-top: 72px;
+
+    color: #636871;
+
+    overflow-x: auto;
+
+}
+
+.my-page-tab-box {
+    min-width: 1400px;
+}
+
+.my-page-tab-box>li {
+    width: calc(100% / 6);
+}
+
+.my-page-tab-box>li>a {
+    display: inline-block;
+
+    width: 100%;
+    padding: 12px 0;
+
+    border: 1px solid #E5E7EB;
+    border-right: 0;
+
+    background-color: #F9FAFB;
+}
+
+.my-page-tab-box>li:last-child>a {
+    border-right: 1px solid #E5E7EB;
+}
+
+.my-page-tab-box>li>a:hover {
+    background-color: #fff;
+    /* border-bottom: 1px solid transparent; */
+    color: #111827;
+
+    font-weight: 500;
+
+
+}
+
+.my-page-tab-box>li>a.tab-current {
+
+    color: #111827;
+
+    font-weight: 500;
+    background-color: #fff;
+
+    border-bottom: 1px solid transparent;
+
+
+}
+
+
+.filter.my-page {
+    margin-top: 56px;
+
+    overflow-x: auto;
+}
+
+.my-page-list-box {
+    grid-column: span 12;
+
+    min-width: 1400px;
+}
+
+
+.my-page-list-box>li {
+    border-bottom: 1px solid #E5E7EB;
+
+    cursor: pointer;
+}
+
+.my-page-list-box>li.notice-hd {
+
+    cursor: default;
+
+    border-bottom: 1px solid #0054A6;
+    height: 42px;
+}
+
+
+.my-page-list-box>li.notice-hd:hover>p:nth-child(2) {
+    text-decoration: none;
+
+}
+
+.my-page-list-box>li:hover>p:nth-child(2) {
+    text-decoration: underline;
+
+}
+
+.notice-hd.my-page>p:first-child {
+    grid-column: span 1;
+
+}
+
+.notice-hd.my-page>p:nth-child(2) {
+    grid-column: span 1;
+
+}
+
+.notice-hd.my-page>p:nth-child(3) {
+    grid-column: 3 / span 7;
+
+}
+
+.notice-hd.my-page>p:nth-child(4) {
+    grid-column: span 1;
+
+}
+
+.notice-hd.my-page>p:nth-child(5) {
+    grid-column: span 1;
+
+}
+
+.notice-hd.my-page>p:nth-child(6) {
+    grid-column: span 1;
+
+}
+
+.my-page-list-box>.notice-list> .ntc-li-num {
+    grid-column: span 1;
+}
+
+.my-page-list-box>.notice-list> .ntc-li-tit {
+    grid-column: 3/ span 7;
+    
+}
+
+.my-page-list-box>.notice-list> .ntc-li-date-01 {
+    grid-column: span 1;
+
+}
+
+.my-page-list-box>.notice-list> .ntc-li-date-02 {
+    grid-column: span 1;
+
+}
+
+
+.my-page-btn-box {
+
+    grid-column: 12/ span 1;
+
+    padding: 20px 0;
+
+
+}
+
+.my-page-btn-box.flx {
+    justify-content: center;
+
+}
+
+
+.my-page-btn-box>.my-page-btn-icon {
+    width: 32px;
+    height: 32px;
+
+    background-image: url(../images/play-btn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.my-page-list-box>li:hover .my-page-btn-icon {
+
+    background-image: url(../images/play-btn-h.png);
+
+}
+
+
+
+/* 
+[7.1.0] My page > complete-lecture
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+complete-lecture
+================================================ */
+
+
+.col-12.notice-page.my-page {
+    margin-top: 56px;
+}
+
+.col-12.notice-page.my-page>.filter-l {
+    grid-column: span 4;
+
+    padding: 0;
+}
+
+
+.selected_item_con.bm_select_box.my-page {
+    border-right: 1px solid #E5E7EB;
+}
+
+
+.col-12.notice-page.my-page>.filter-r {
+    grid-column: 11/span 2;
+
+}
+
+
+.f-select-box.my-page>div:first-child {
+    width: 55%;
+}
+
+.f-select-box.my-page>div:last-child {
+    width: 45%;
+}
+
+.col-12.notice-page.my-page.complete-lec {
+    margin-top: 32px;
+}
+
+
+
+
+
+input[type="checkbox"] {
+
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+
+}
+
+.check-style {
+    border: 1px solid #9CA3AF;
+    border-radius: 4px;
+
+}
+
+input[type="checkbox"]:checked {
+
+    width: 24px;
+    height: 24px;
+
+    background-color: #0054A6;
+    border: 1px solid #0054A6;
+
+    background-image: url(../images/input-checked.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 14px 12px;
+}
+
+input[type="checkbox"]:disabled {
+
+    border: 1px solid #E5E7EB;
+    cursor: default;
+}
+
+/* .my-page-list-box.complete-lec>li {
+    cursor: default;
+} */
+
+.my-page-list-box.complete-lec>li.notice-hd
+> form {
+
+    grid-column: span 1;
+
+}
+
+.my-page-list-box.complete-lec>li.notice-hd > p:nth-child(2) {
+    grid-column: span 1;
+
+}
+
+.my-page-list-box.complete-lec>li.notice-hd > p:nth-child(3) {
+    grid-column: span 1;
+
+}
+
+.my-page-list-box.complete-lec>li.notice-hd > p:nth-child(4) {
+    grid-column: 4/span 7;
+
+}
+
+.my-page-list-box.complete-lec>li.notice-hd > p:nth-child(5),
+.my-page-list-box.complete-lec>li.notice-hd > p:nth-child(6)
+ {
+    grid-column: span 1;
+
+}
+
+
+
+.my-page-list-box.complete-lec>li.notice-list > form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-page-list-box.complete-lec>li.notice-list > .ntc-li-num {
+    grid-column: span 1;
+
+    text-decoration: none;
+
+    text-align: center;
+}
+
+.my-page-list-box.complete-lec>li.notice-list > .ntc-li-tit {
+    grid-column: 4/span 7;
+
+    text-align: left;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+
+}
+
+.my-page-list-box.complete-lec>li.notice-list:hover > .ntc-li-tit {
+    text-decoration: underline;
+
+}
+
+
+.ntc-li-btn {
+    padding: 20px 0;
+}
+
+.ntc-li-btn >button {
+
+    width: 100%;
+
+    color: #0054A6;
+    border: 1px solid #0054A6;
+    border-radius: 2px;
+    padding: 4px 0;
+    transition: all .2s ease;
+}
+
+.ntc-li-btn >button:hover {
+    color: white;
+    background-color: #0054A6;
+    border-color: #0054A6;
+}
+
+
+.complete-lec-btn {
+
+    grid-column: 11/ span 2;
+
+
+    /* max-width: 174px; */
+    /* padding: 0 12px; */
+
+    margin-left: auto;
+
+    margin-top: 40px;
+
+}
+
+.complete-lec-btn > button {
+    color: white;
+
+    background-color: #0054A6;
+    border-radius: 2px;
+
+    width: 100%;
+
+    padding: 8.5px 8px;
+
+    transition: all .2s ease;
+
+}
+
+.complete-lec-btn > button:hover {
+    background: #002063;
+}
+
+
+/* 
+[7.2.0] My page > complete-p-lecture
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+complete-p-lecture
+================================================ */
+
+.col-12.notice-page.complete-p-lec>.filter-r {
+    grid-column: 12/ span 1;
+}
+
+.f-select-box.complete-p-lec > div:last-child {
+    width: 100%;
+    
+    border-right: 1px solid #E5E7EB;
+}
+
+
+.my-page-list-box.complete-p-lec>li.notice-hd > p:nth-child(3) {
+    grid-column: 3/ span 8;
+}
+
+.my-page-list-box.complete-p-lec>li.notice-hd > p:nth-child(4) {
+    grid-column: span 1;
+}
+
+
+.my-page-list-box.complete-p-lec>li.notice-list > .ntc-li-tit {
+    grid-column: 3/span 8;
+}
+
+
+/* 
+[7.3.0] My page > complete-foundation-course
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+complete-foundation-course
+================================================ */
+
+.col-12.notice-page.complete-foundation>.filter-r {
+    /* grid-column: 12/ span 1; */
+
+
+    grid-column: 11/ span 2;
+
+    margin-left: 98px;
+    
+}
+
+
+/* 
+[7.4.0] My page > my-favorite-lecture
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+my-favorite-lecture
+================================================ */
+
+.col-12.notice-page.my-page.my-favorite {
+    margin-top: 72px;
+}
+
+
+
+
+.col-12.notice-page.my-page.my-favorite > ul {
+    min-width: auto;
+    grid-column: 2/ span 10;
+}
+
+.my-page-list-box.my-favorite>li.notice-hd > p:nth-child(1) {
+    grid-column: span 1;
+}
+
+
+.my-page-list-box.my-favorite>li.notice-hd > p:nth-child(2) {
+    grid-column: span 1;
+}
+
+.my-page-list-box.my-favorite>li.notice-hd > p:nth-child(3) {
+    grid-column: span 6;
+}
+
+.my-page-list-box.my-favorite>li.notice-hd > p:nth-child(4) {
+    grid-column: span 1;
+}
+.my-page-list-box.my-favorite>li.notice-hd > p:nth-child(5) {
+    grid-column: span 1;
+}
+
+
+.my-page-list-box.my-favorite>li.notice-list > .ntc-li-tit {
+
+    grid-column: 3/ span 6;
+}
+
+.my-page-list-box.my-favorite>li.notice-list > .ntc-li-date-04 {
+
+    grid-column: span 1 ;
+}
+
+.ntc-li-del.flx {
+    justify-content: center;
+}
+
+.ntc-li-del > button {
+    color: #636871;
+}
+
+.ntc-li-del > button:hover {
+    text-decoration: underline;
+    color: #0054A6;
+}
 
 
 

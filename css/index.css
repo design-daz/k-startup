@@ -207,6 +207,14 @@ Document
 }
 
 
+span.update-date {
+    font-size: 12px; 
+    padding-left:4px;
+
+    color: #00A4B6;
+}
+
+
 /*
 Main - Gallery
 ================================================ */
