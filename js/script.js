@@ -135,8 +135,8 @@ $(document).ready(function () {
     },
 
     pagination: {
-      el: '.swiper-pagination.n-lec',
-      type: 'fraction',
+      el: ".swiper-pagination.n-lec",
+      type: "fraction",
     },
 
     // allowTouchMove : true,
@@ -181,8 +181,8 @@ $(document).ready(function () {
     },
 
     pagination: {
-      el: '.swiper-pagination.p-lec',
-      type: 'fraction',
+      el: ".swiper-pagination.p-lec",
+      type: "fraction",
     },
   });
 
@@ -202,18 +202,91 @@ $(document).ready(function () {
     $(this).find(".select_style_1_con").stop().toggle();
   });
 
-
-
   // ====== [6.5.0] q&a Accordion  ===== //
 
-
-  $(".que").click(function() {
+  $(".que").click(function () {
     $(this).next(".anw").stop().slideToggle(0);
-   $(this).toggleClass('on').siblings().removeClass('on');
-   $(this).next(".anw").siblings(".anw").slideUp(0); // 1개씩 펼치기
- });
+    $(this).toggleClass("on").siblings().removeClass("on");
+    $(this).next(".anw").siblings(".anw").slideUp(0); // 1개씩 펼치기
+  });
+
+  // ====== [7.5.0] my-mod select  ===== //
+
+  
+  const label = document.querySelectorAll(".label");
+  label.forEach(function (lb) {
+    lb.addEventListener("click", (e) => {
+      let optionList = lb.nextElementSibling;
+      let optionItems = optionList.querySelectorAll(".optionItem");
+      clickLabel(lb, optionItems);
+    });
+  });
+  const clickLabel = (lb, optionItems) => {
+    if (lb.parentNode.classList.contains("active")) {
+      lb.parentNode.classList.remove("active");
+      optionItems.forEach((opt) => {
+        opt.removeEventListener("click", () => {
+          handleSelect(lb, opt);
+        });
+      });
+    } else {
+      lb.parentNode.classList.add("active");
+      optionItems.forEach((opt) => {
+        opt.addEventListener("click", () => {
+          handleSelect(lb, opt);
+        });
+      });
+    }
+  };
+  const handleSelect = (label, item) => {
+    label.innerHTML = item.textContent;
+    label.parentNode.classList.remove("active");
+  };
 
 
+  $(".my-mod-cnt").click(function () {
+    
+  //  $(this).siblings().find(".my-mod-cnt-select").toggleClass("active").removeClass("active"); 
+   
+   $(this).siblings().find(".my-mod-cnt-select").removeClass("active"); // 1개씩 펼치기
+  });
 
+  
+  //   /* 일반함수 - 단일일때 */
+  // const label = document.querySelector('.label');
+  // const options = document.querySelectorAll('.optionItem');
+  // // 클릭한 옵션의 텍스트를 라벨 안에 넣음
+  // const handleSelect = function(item) {
+  //   label.innerHTML = item.textContent;
+  //   label.parentNode.classList.remove('active');
+  // }
+  // // 옵션 클릭시 클릭한 옵션을 넘김
+  // options.forEach(function(option){
+  //   option.addEventListener('click', function(){handleSelect(option)})
+  // })
+  // // 라벨을 클릭시 옵션 목록이 열림/닫힘
+  // label.addEventListener('click', function(){
+  //   if(label.parentNode.classList.contains('active')) {
+  //     label.parentNode.classList.remove('active');
+  //   } else {
+  //     label.parentNode.classList.add('active');
+  //   }
+  // });
+
+
+  document.addEventListener("click", function (e) {
+    const targetElement = e.target;
+    const isSelect = targetElement.classList.contains(".my-mod-cnt-select") || targetElement.closest(".my-mod-cnt-select");
+  
+    if (isSelect) {
+      return;
+    }
+  
+    const allSelectBoxElements = document.querySelectorAll(".my-mod-cnt-select");
+  
+    allSelectBoxElements.forEach(boxElement => {
+      boxElement.classList.remove("active");
+    });
+  });
 
 }); //ready end
