@@ -1115,6 +1115,60 @@ my-favorite-lecture
 
 
 
+
+/* 
+[7.5.0] My page > my-mod
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+my-mod
+================================================ */
+
+.essential-tit-box>p {
+    text-align: right;
+}
+
+.essential-tit-box>p, .essential-tit-box>.essential {
+    padding-left: 32px;
+}
+
+.essential-tit-box> .essential::before {
+    left: auto;
+}
+
+
+.col-10.my-mod {
+    grid-column: span 10;
+}
+
+.essential-tit-box {
+    grid-column: 9/ span 2;
+}
+
+.my-mod-cnt-box {
+    grid-column: span 6;
+}
+
+.my-mod-cnt {
+    grid-column: span 10;
+}
+
+.my-mod-cnt-select.active .optionList {
+    max-height: 200px;
+}
+
+
+.my-mod-btn {
+    grid-column: 6/ span 1;
+    padding: 0;
+
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+
+
 /* 
 Swiper
 ///////////////////////////////////////////////////////////////////////////////////////// */

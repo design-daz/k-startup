@@ -1133,10 +1133,35 @@ my-favorite-lecture
 ================================================ */
 
 
+/* 
+[7.5.0] My page > my-mod
+///////////////////////////////////////////////////////////////////////////////////////// */
 
 
+/*
+my-mod
+================================================ */
 
+.essential-tit-box {
+    grid-column: 7/ span 4;
+}
 
+.essential-tit-box>p, .essential-tit-box>.essential {
+    padding-left: 22px;
+}
+
+.my-mod-cnt.col-6 {
+    gap: 0 20px;
+}
+
+.my-mod-cnt>.my-mod-cnt-tit,
+.my-mod-cnt>.my-mod-cnt-select {
+    grid-column: span 6;
+}
+
+.my-mod-btn {
+    grid-column: 5/span 2;
+}
 
 
 
